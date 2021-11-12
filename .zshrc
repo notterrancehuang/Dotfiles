@@ -137,6 +137,9 @@ alias cp="cp -i"
 alias mv='mv -i'
 alias rm='rm -i'
 
+# broot
+alias br="br -h"
+
 # shutdown or reboot
 alias ssn="sudo shutdown -h now"
 alias sr="sudo shutdown -r now"
@@ -166,5 +169,15 @@ alias push='git push origin'
 alias stat='git status'  # 'status' is protected name so using 'stat' instead
 alias tag='git tag'
 alias newtag='git tag -a'
+alias g++='g++ -std=c++17'
 
-neofetch
+# vifm change directory when quitting
+vicd()
+{
+    local dst="$(command vifm --choose-dir - "$@")"
+    if [ -z "$dst" ]; then
+        echo 'Directory picking cancelled/failed'
+        return 1
+    fi
+    cd "$dst"
+}
