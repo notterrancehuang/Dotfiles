@@ -53,3 +53,5 @@ nnoremap <C-l> <C-w>l
 
 " greatest remap ever
 vnoremap <leader>p "_dP
+
+let macvim_skip_colorscheme=1
