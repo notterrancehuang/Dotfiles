@@ -169,6 +169,8 @@ alias push='git push origin'
 alias stat='git status'  # 'status' is protected name so using 'stat' instead
 alias tag='git tag'
 alias newtag='git tag -a'
+
+# C++
 alias g++='g++ -std=c++17'
 
 # vifm change directory when quitting
