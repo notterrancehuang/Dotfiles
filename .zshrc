@@ -117,8 +117,6 @@ source $ZSH/oh-my-zsh.sh
 # => zshrc
 #############################################################################
 
-
-
 # vim
 alias vim='nvim'
 export EDITOR='nvim'
