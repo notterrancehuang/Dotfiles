@@ -181,3 +181,6 @@ vicd()
     fi
     cd "$dst"
 }
+
+# Vim mode for terminal
+bindkey -v
