@@ -39,6 +39,9 @@ alias .3="cd ../../.."
 alias .4="cd ../../../.."
 alias .4="cd ../../../../.."
 
+# dirs command
+alias dirs="dirs -v"
+
 # confirm before overwriting something
 alias cp="cp -i"
 alias mv='mv -i'
