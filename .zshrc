@@ -96,3 +96,7 @@ vicd()
 
 # Vim mode for terminal
 bindkey -v
+
+# switch ssh identities
+alias sshrit="ssh-add -D && ssh-add $HOME/.ssh/id_ed25519_rit"
+alias sshth="ssh-add -D && ssh-add $HOME/.ssh/id_ed25519"
