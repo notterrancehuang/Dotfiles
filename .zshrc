@@ -1,3 +1,4 @@
+
 #  _____ _   _
 # |_   _| | | | Terrance Huang
 #   | | | |_| |
@@ -5,6 +6,15 @@
 #   |_| |_| |_|
 # My zsh config
 
+
+######################################################################
+# => Powerlevel10k
+######################################################################
+#
+# Powerlevel10k instant prompt
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
 ######################################################################
 # => Oh My Zsh
@@ -97,3 +107,9 @@ bindkey -v
 # switch ssh identities
 alias sshrit="ssh-add -D && ssh-add $HOME/.ssh/id_ed25519_rit"
 alias sshth="ssh-add -D && ssh-add $HOME/.ssh/id_ed25519"
+
+# powerlevel10k
+source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
