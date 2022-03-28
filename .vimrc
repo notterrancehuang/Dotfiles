@@ -53,6 +53,9 @@ nnoremap <C-l> <C-w>l
 " capital Y remap
 nnoremap Y y$
 
+" Nerdtree show hidden files
+let NERDTreeShowHidden=1
+
 " Keeping it centered
 nnoremap n nzzzv
 nnoremap N Nzzzv
