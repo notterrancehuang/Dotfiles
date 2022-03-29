@@ -19,7 +19,6 @@ if (has("termguicolors"))
     set termguicolors
 endif
 :tnoremap <Esc> <C-\><C-n>
-autocmd TermOpen * startinsert
 nnoremap <silent> <esc> :noh<cr><esc>
 map <silent> <C-n> :NERDTreeFocus<CR>
 
@@ -50,6 +49,17 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+" capital Y remap
+nnoremap Y y$
+
+" Nerdtree show hidden files
+let NERDTreeShowHidden=1
+
+" Keeping it centered
+nnoremap n nzzzv
+nnoremap N Nzzzv
+nnoremap J mzJ`z
 
 " greatest remap ever
 vnoremap <leader>p "_dP
