@@ -12,6 +12,7 @@ call plug#begin("~/.config/nvim/plugged")
     Plug 'tpope/vim-surround'
     Plug 'tpope/vim-commentary'
     Plug 'tpenguinltg/vim-closing-brackets'
+    Plug 'junegunn/vim-peekaboo'
 
 call plug#end()
 
