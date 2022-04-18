@@ -48,6 +48,8 @@ alias ...="cd ../.."
 alias .3="cd ../../.."
 alias .4="cd ../../../.."
 alias .4="cd ../../../../.."
+alias school="cd ~/RIT"
+alias dl="cd ~/Downloads"
 
 # confirm before overwriting something
 alias cp="cp -i"
