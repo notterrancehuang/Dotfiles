@@ -64,4 +64,7 @@ nnoremap J mzJ`z
 " greatest remap ever
 vnoremap <leader>p "_dP
 
+" remap space to play q macro
+nnoremap <Space> @q
+
 let macvim_skip_colorscheme=1
