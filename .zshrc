@@ -65,9 +65,6 @@ alias sr="sudo shutdown -r now"
 
 source $HOME/.config/broot/launcher/bash/br
 
-# Terminal Rick Roll
-alias rr="curl -s -L http://bit.ly/10hA8iC | bash"
-
 # Changing "ls" to "exa"
 alias ls='exa -al --color=always --group-directories-first' # my preferred listing
 alias la='exa -a --color=always --group-directories-first'  # all files and dirs
