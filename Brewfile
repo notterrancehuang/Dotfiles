@@ -58,12 +58,3 @@ cask "scroll-reverser"
 cask "slack"
 cask "spotify"
 mas "Amphetamine", id: 937984704
-mas "Asphalt 9", id: 1491129197
-mas "iMovie", id: 408981434
-mas "Messenger", id: 1480068668
-mas "Night Sky X", id: 475772902
-mas "Pages", id: 409201541
-mas "SketchBook", id: 863486266
-mas "Todoist", id: 585829637
-mas "WeChat", id: 836500024
-mas "WhatsApp", id: 1147396723
