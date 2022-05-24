@@ -1,6 +1,8 @@
 set nocompatible
 filetype off
 
+let mapleader="<C-B>"
+
 call plug#begin("~/.config/nvim/plugged")
 
     Plug 'morhetz/gruvbox'
@@ -14,6 +16,16 @@ call plug#begin("~/.config/nvim/plugged")
     Plug 'tpenguinltg/vim-closing-brackets'
 
 call plug#end()
+
+" coc config
+let g:coc_global_extensions = [
+    \ 'coc-snippets',
+    \ 'coc-pairs',
+    \ 'coc-tsserver',
+    \ 'coc-eslint',
+    \ 'coc-prettier',
+    \ 'coc-json',
+    \ ]
 
 if (has("termguicolors"))
     set termguicolors
