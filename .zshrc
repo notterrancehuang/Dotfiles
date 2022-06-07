@@ -87,7 +87,7 @@ alias tag='git tag'
 alias newtag='git tag -a'
 
 # clearing clipboard
-alias cdn='pbcopy < /dev/null'
+alias ccb='pbcopy < /dev/null'
 
 # C++
 alias g++='g++ -std=c++17'
