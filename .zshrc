@@ -1,4 +1,3 @@
-
 #  _____ _   _
 # |_   _| | | | Terrance Huang
 #   | | | |_| |
@@ -22,8 +21,6 @@ fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-
-ZSH_THEME="robbyrussell"
 
 # Command execution time stamp in history
 HIST_STAMPS="yyyy-mm-dd"
@@ -88,9 +85,6 @@ alias newtag='git tag -a'
 
 # clearing clipboard
 alias ccb='pbcopy < /dev/null'
-
-# C++
-alias g++='g++ -std=c++17'
 
 # vifm change directory when quitting
 vicd()
