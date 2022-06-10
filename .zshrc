@@ -1,23 +1,7 @@
-#  _____ _   _
-# |_   _| | | | Terrance Huang
-#   | | | |_| |
-#   | | |  _  |
-#   |_| |_| |_|
-# My zsh config
-
-
-######################################################################
-# => Powerlevel10k
-######################################################################
-#
 # Powerlevel10k instant prompt
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
-
-######################################################################
-# => Oh My Zsh
-######################################################################
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -28,10 +12,6 @@ HIST_STAMPS="yyyy-mm-dd"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-
-#############################################################################
-# => zshrc
-#############################################################################
 
 # vim
 alias vim='nvim'
@@ -79,12 +59,16 @@ alias commit='git commit -m'
 alias fetch='git fetch'
 alias pull='git pull origin'
 alias push='git push origin'
-alias stat='git status'  # 'status' is protected name so using 'stat' instead
+# 'status' is protected name so using 'stat' instead
+alias stat='git status'  
 alias tag='git tag'
 alias newtag='git tag -a'
 
 # clearing clipboard
 alias ccb='pbcopy < /dev/null'
+
+# homebrew no auto update
+export HOMEBREW_NO_AUTO_UPDATE=1
 
 # vifm change directory when quitting
 vicd()
