@@ -67,6 +67,9 @@ alias newtag='git tag -a'
 # clearing clipboard
 alias ccb='pbcopy < /dev/null'
 
+# getting PID
+alias pidof='ps axc | grep -i'
+
 # homebrew no auto update
 export HOMEBREW_NO_AUTO_UPDATE=1
 
