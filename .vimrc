@@ -50,7 +50,6 @@ set expandtab
 set smartindent
 set smartcase
 set hlsearch
-set clipboard=unnamedplus
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
