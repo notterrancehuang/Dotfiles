@@ -50,7 +50,8 @@ set expandtab
 set smartindent
 set smartcase
 set hlsearch
-set clipboard=unnamedplus
+set clipboard+=unnamedplus
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Splits and tabbed files
