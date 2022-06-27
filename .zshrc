@@ -73,6 +73,9 @@ alias pidof='ps axc | grep -i'
 # homebrew no auto update
 export HOMEBREW_NO_AUTO_UPDATE=1
 
+# turn off mail
+MAILCHECK=0
+
 # vifm change directory when quitting
 vicd()
 {
