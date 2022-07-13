@@ -88,7 +88,7 @@ vicd()
 }
 
 # make directory and cd to that directory
-mkcdir()
+mkcd()
 {
     mkdir -p -- "$1" &&
         cd -P -- "$1"
