@@ -87,6 +87,13 @@ vicd()
     cd "$dst"
 }
 
+# make directory and cd to that directory
+mkcdir()
+{
+    mkdir -p -- "$1" &&
+        cd -P -- "$1"
+}
+
 # Vim mode for terminal
 bindkey -v
 
