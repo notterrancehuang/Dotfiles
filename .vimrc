@@ -10,10 +10,8 @@ call plug#begin("~/.config/nvim/plugged")
     Plug 'preservim/nerdtree'
     Plug 'ctrlpvim/ctrlp.vim'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'Raimondi/delimitMate'
     Plug 'tpope/vim-surround'
     Plug 'tpope/vim-commentary'
-    Plug 'tpenguinltg/vim-closing-brackets'
 
 call plug#end()
 
