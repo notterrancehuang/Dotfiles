@@ -94,6 +94,19 @@ mkcd()
         cd -P -- "$1"
 }
 
+# tar compress and decompress
+targz()
+{
+    tar -czvf $1.tar.gz $1;
+    rm -rf $1
+}
+
+untargz()
+{
+    tar -xzvf $1;
+    rm -rf $1
+}
+
 # Vim mode for terminal
 bindkey -v
 
