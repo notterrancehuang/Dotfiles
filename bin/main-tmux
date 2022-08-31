@@ -1,0 +1,30 @@
+#!/bin/zsh
+
+# create session and window
+tmux new-session -s main -d -x "$(tput cols)" -y "$(tput lines)"
+tmux rename-window main
+
+# clock
+tmux send-keys "tty-clock -sB -C 6" C-m
+
+# gotop
+tmux split-pane -v -p 81
+tmux send-keys "gotop" C-m
+
+# main zsh pane
+tmux split-pane -h -f -p 68
+
+#neofetch
+tmux split-pane -v -p 53
+tmux send-keys "neofetch" C-m
+
+# cowsay
+tmux split-pane -h -p 38
+tmux send-keys "cowsay Hello there | lolcat" C-m
+
+# pipes.sh
+tmux split-pane -v
+tmux send-keys "pipes.sh" C-m
+
+# select pane 3
+tmux select-pane -t 3
