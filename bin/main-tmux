@@ -24,7 +24,7 @@ tmux send-keys "cowsay Hello there | lolcat" C-m
 
 # pipes.sh
 tmux split-pane -v
-tmux send-keys "pipes.sh" C-m
+tmux send-keys "cmatrix -s -b" C-m
 
 # select pane 3
 tmux select-pane -t 3

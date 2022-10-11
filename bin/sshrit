@@ -1,0 +1,3 @@
+ssh-add -D;
+ssh-add $HOME/.ssh/id_ed25519_rit; 
+git config --global user.email th6812@rit.edu

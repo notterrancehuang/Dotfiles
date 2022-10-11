@@ -1,0 +1,3 @@
+ssh-add -D;
+ssh-add $HOME/.ssh/id_ed25519;
+git config --global user.email notterrancehuang@gmail.com
