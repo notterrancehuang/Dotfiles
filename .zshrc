@@ -110,10 +110,6 @@ untargz()
 # Vim mode for terminal
 bindkey -v
 
-# switch ssh identities
-alias sshrit="ssh-add -D && ssh-add $HOME/.ssh/id_ed25519_rit"
-alias sshth="ssh-add -D && ssh-add $HOME/.ssh/id_ed25519"
-
 # powerlevel10k
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
