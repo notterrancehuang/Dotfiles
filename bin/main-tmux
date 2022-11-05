@@ -16,7 +16,7 @@ tmux split-pane -h -f -p 68
 
 #neofetch
 tmux split-pane -v -p 53
-tmux send-keys "neofetch" C-m
+tmux send-keys "hyfetch" C-m
 
 # cowsay
 tmux split-pane -h -p 38
