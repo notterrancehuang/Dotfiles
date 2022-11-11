@@ -14,7 +14,7 @@ tmux send-keys "gotop" C-m
 # main zsh pane
 tmux split-pane -h -f -p 68
 
-#neofetch
+# hyfetch
 tmux split-pane -v -p 53
 tmux send-keys "hyfetch" C-m
 
