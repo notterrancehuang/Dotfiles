@@ -22,7 +22,7 @@ tmux send-keys "hyfetch" C-m
 tmux split-pane -h -p 38
 tmux send-keys "cowsay Hello there | lolcat" C-m
 
-# pipes.sh
+# cmatrix
 tmux split-pane -v
 tmux send-keys "cmatrix -s -b" C-m
 
