@@ -12,6 +12,7 @@ call plug#begin("~/.config/nvim/plugged")
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'tpope/vim-surround'
     Plug 'tpope/vim-commentary'
+    Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 
@@ -79,3 +80,4 @@ vnoremap <leader>p "_dP
 nnoremap <Space> @q
 
 let macvim_skip_colorscheme=1
+
