@@ -1,19 +1,30 @@
 set nocompatible
 filetype off
 
+let mapleader="<C-B>"
+
 call plug#begin("~/.config/nvim/plugged")
 
-    Plug 'morhetz/gruvbox'
+    Plug 'dracula/vim', { 'as': 'dracula' }
     Plug 'tpope/vim-fugitive'
     Plug 'preservim/nerdtree'
     Plug 'ctrlpvim/ctrlp.vim'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'Raimondi/delimitMate'
     Plug 'tpope/vim-surround'
     Plug 'tpope/vim-commentary'
-    Plug 'tpenguinltg/vim-closing-brackets'
+    Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
+
+" coc config
+let g:coc_global_extensions = [
+    \ 'coc-snippets',
+    \ 'coc-pairs',
+    \ 'coc-tsserver',
+    \ 'coc-eslint',
+    \ 'coc-prettier',
+    \ 'coc-json',
+    \ ]
 
 if (has("termguicolors"))
     set termguicolors
@@ -23,7 +34,7 @@ nnoremap <silent> <esc> :noh<cr><esc>
 map <silent> <C-n> :NERDTreeFocus<CR>
 
 set background=dark
-colorscheme gruvbox
+colorscheme dracula
 
 set number
 set relativenumber
@@ -38,6 +49,7 @@ set expandtab
 set smartindent
 set smartcase
 set hlsearch
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Splits and tabbed files
@@ -64,4 +76,9 @@ nnoremap J mzJ`z
 " greatest remap ever
 vnoremap <leader>p "_dP
 
+" remap space to play q macro
+nnoremap <Space> @q
+
 let macvim_skip_colorscheme=1
+
+

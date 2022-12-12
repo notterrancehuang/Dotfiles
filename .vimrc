@@ -5,7 +5,7 @@ let mapleader="<C-B>"
 
 call plug#begin("~/.config/nvim/plugged")
 
-    Plug 'morhetz/gruvbox'
+    Plug 'dracula/vim', { 'as': 'dracula' }
     Plug 'tpope/vim-fugitive'
     Plug 'preservim/nerdtree'
     Plug 'ctrlpvim/ctrlp.vim'
@@ -34,7 +34,7 @@ nnoremap <silent> <esc> :noh<cr><esc>
 map <silent> <C-n> :NERDTreeFocus<CR>
 
 set background=dark
-colorscheme gruvbox
+colorscheme dracula
 
 set number
 set relativenumber
