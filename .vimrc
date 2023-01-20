@@ -1,5 +1,6 @@
 syntax on 
 set number
+set relativenumber
 set ignorecase
 set incsearch
 set hlsearch
