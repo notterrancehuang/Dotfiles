@@ -118,3 +118,5 @@ source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 # add doom to path
 export PATH=”$HOME/.emacs.d/bin:$PATH”
+
+source /Users/terrancehuang/.config/broot/launcher/bash/br
