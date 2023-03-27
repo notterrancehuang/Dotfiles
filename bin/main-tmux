@@ -9,7 +9,7 @@ tmux send-keys "tty-clock -sB -C 6" C-m
 
 # gotop
 tmux split-pane -v -p 81
-tmux send-keys "gotop" C-m
+tmux send-keys "gotop --rate=5s" C-m
 
 # main zsh pane
 tmux split-pane -h -f -p 68
