@@ -42,12 +42,12 @@ alias sr="sudo shutdown -r now"
 
 source $HOME/.config/broot/launcher/bash/br
 
-# Changing "ls" to "exa"
-alias ls='exa -al --color=always --group-directories-first' # my preferred listing
-alias l='exa -a --color=always --group-directories-first'  # all files and dirs
-alias ll='exa -l --color=always --group-directories-first'  # long format
-alias lt='exa -aT --color=always --group-directories-first' # tree listing
-alias l.='exa -a | egrep "^\."'
+# Changing "ls" to "eza"
+alias ls='eza -al --color=always --group-directories-first' # my preferred listing
+alias l='eza -a --color=always --group-directories-first'  # all files and dirs
+alias ll='eza -l --color=always --group-directories-first'  # long format
+alias lt='eza -aT --color=always --group-directories-first' # tree listing
+alias l.='eza -a | egrep "^\."'
 
 # git
 alias addup='git add -u'
@@ -120,3 +120,10 @@ source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 export PATH=”$HOME/.emacs.d/bin:$PATH”
 
 source /Users/terrancehuang/.config/broot/launcher/bash/br
+
+# set default install location to local Applications folder
+export HOMEBREW_CASK_OPTS="--appdir=~/Applications --fontdir=/Library/Fonts"
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
