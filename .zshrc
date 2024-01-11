@@ -73,9 +73,6 @@ alias pidof='ps axc | grep -i'
 # homebrew no auto update
 export HOMEBREW_NO_AUTO_UPDATE=1
 
-# turn off mail
-MAILCHECK=0
-
 # vifm change directory when quitting
 vicd()
 {
@@ -123,7 +120,6 @@ source /Users/terrancehuang/.config/broot/launcher/bash/br
 
 # set default install location to local Applications folder
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications --fontdir=/Library/Fonts"
-
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
