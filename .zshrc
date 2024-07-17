@@ -28,11 +28,6 @@ alias .4="cd ../../../../.."
 alias school="cd ~/RIT"
 alias dl="cd ~/Downloads"
 
-# confirm before overwriting something
-alias cp="cp -i"
-alias mv='mv -i'
-alias rm='rm -i'
-
 # broot
 alias br="br -h"
 
@@ -91,24 +86,16 @@ mkcd()
         cd -P -- "$1"
 }
 
-# tar compress and decompress
-targz()
-{
-    tar -czvf $1.tar.gz $1;
-    rm -rf $1
-}
-
-untargz()
-{
-    tar -xzvf $1;
-    rm -rf $1
-}
-
 # Vim mode for terminal
 bindkey -v
 
+# pushd
+setopt pushdsilent # Omit printing directory stack
+unsetopt auto_pushd
+# setopt pushdminus  # Invert meanings of +N and -N arguments to pushd
+
 # powerlevel10k
-source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
